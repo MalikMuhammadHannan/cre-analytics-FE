@@ -1,0 +1,45 @@
+.imgDiv {
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+  position: relative;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgDiv img {
+  height: 200px;
+  width: 100%;
+
+  object-fit: cover;
+}
+.iconDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.iconDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logoImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.logoImg svg {
+  font-size: 30px;
+  color: var(--white-color);
+}
+.video {
+  cursor: pointer;
+}

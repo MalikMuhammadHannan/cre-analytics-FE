@@ -1,0 +1,21 @@
+.loaderForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 15px;
+}
+.fullWidth {
+  grid-column: 1 / -1;
+}
+.license {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 15px;
+}
+.btnsLoader {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

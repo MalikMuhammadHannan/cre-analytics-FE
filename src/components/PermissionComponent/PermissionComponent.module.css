@@ -1,0 +1,63 @@
+.permission_container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.permissionDiv {
+  border-radius: 4px;
+  border: 1px solid #c7c7c7 !important;
+  padding: 15px;
+}
+
+.subPermissions {
+  padding-left: 20px;
+}
+
+.permission {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: var(--white-color);
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.checkbox svg {
+  font-size: 16px;
+  color: var(--white-color);
+}
+
+.checkbox.active {
+  background-color: var(--main-color);
+}
+
+.checkbox.disabled {
+  opacity: 0.5;
+}
+
+.subPermissions {
+  margin-top: 10px;
+}
+
+.permission p {
+  margin-bottom: 0px;
+  color: var(--font-color);
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.mainPermission p {
+  font-size: 17px;
+  font-family: var(--ff-secondary-semi-bold);
+}

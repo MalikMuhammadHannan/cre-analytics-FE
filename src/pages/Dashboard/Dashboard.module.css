@@ -1,0 +1,207 @@
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 8px 20px #00000017;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  padding: 15px;
+}
+.stats_image {
+  max-height: 65px;
+  max-width: 70px;
+}
+.stats_image img {
+  width: auto;
+  height: auto;
+}
+.stats_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.stats_content h6 {
+  color: var(--text-color) !important;
+  font-family: var(--ff-primary-semiBold);
+  font-size: 15px;
+}
+.stats_content h2 {
+  color: var(--main-color) !important;
+  font-family: var(--ff-primary-semiBold);
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+.graph_container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 4fr 2fr;
+  margin-top: 30px;
+}
+.monthly_graph {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px #00000017;
+  background-color: var(--white-color);
+}
+.graph_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.graph_heading h3 {
+  font-family: var(--ff-primary-semiBold);
+  font-size: 22px;
+  color: var(--text-color) !important;
+}
+.revenueHeading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 25px;
+}
+.revenueBox {
+  height: 14px;
+  width: 14px;
+  background-color: var(--main-color);
+  border-radius: 4px;
+}
+.revenueHeading p {
+  font-size: 12px;
+  color: var(--text-color);
+  margin-bottom: 0px;
+}
+.selling_category {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px #00000017;
+  background-color: var(--white-color);
+  height: 100%;
+}
+.sellingHeading h3 {
+  font-family: var(--ff-primary-semiBold);
+  font-size: 22px;
+  color: var(--text-color) !important;
+}
+.category_circles {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+.circle h6 {
+  width: 75%;
+  font-size: 14px;
+  color: var(--white-color) !important;
+  font-family: var(--ff-primary-bold);
+  text-align: center;
+}
+.circle p {
+  font-size: 11px;
+  color: var(--white-color);
+  margin-bottom: 0px !important;
+  text-align: center;
+  width: 75%;
+}
+.medical_circle {
+  height: 100%;
+  width: 100%;
+  background-color: #0f60ff;
+  gap: 5px;
+}
+.hospital_circle {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%);
+  background-color: #112e4f;
+}
+.gauge_circle {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: 3;
+  bottom: -40px;
+  right: -75px;
+  background-color: var(--main-light-color);
+}
+.active_orders {
+  margin-top: 25px;
+  background-color: var(--white-color);
+  box-shadow: 0px 8px 20px #00000017;
+  border-radius: 10px;
+  padding: 15px;
+}
+.active_orders_heading {
+  margin-bottom: 10px;
+}
+.active_orders_heading h2 {
+  font-size: 22px;
+  color: var(--text-color) !important;
+}
+@media screen and (max-width: 1500px) {
+  .category_circles {
+    margin-left: 20px;
+    /* right: -20px; */
+  }
+}
+@media screen and (max-width: 1300px) {
+  .category_circles {
+    margin-left: 0px;
+    width: 170px;
+    height: 170px;
+  }
+  .gauge_circle {
+    bottom: -25px;
+    right: -40px;
+    height: 110px;
+    width: 110px;
+  }
+  .hospital_circle {
+    height: 95px;
+    width: 95px;
+    bottom: -70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .graph_container {
+    grid-template-columns: 1fr;
+  }
+  .selling_category {
+    height: 350px;
+  }
+  .category_circles {
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .category_circles {
+    margin-left: 0px;
+  }
+}

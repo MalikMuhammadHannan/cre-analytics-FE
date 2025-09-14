@@ -1,0 +1,22 @@
+.pagination_div {
+  padding: 10px 0px 0px 0px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  background-color: var(--white-color);
+  width: 100%;
+}
+.pagination_div p {
+  font-size: 14px;
+  font-family: var(--ff-primary-reg);
+  color: var(--text-color) !important;
+  margin-bottom: 0px !important;
+}
+@media screen and (max-width: 600px) {
+  .pagination_div {
+    gap: 7px;
+    flex-direction: column-reverse;
+  }
+}

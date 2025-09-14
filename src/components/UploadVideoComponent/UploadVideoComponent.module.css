@@ -1,0 +1,61 @@
+.player__wrapper { }
+
+.videoWrapper{
+	position: relative;
+}
+.videoWrapper[data-variant="bordered"]{
+	border:1px solid var(--border-color);
+	border-radius:0.5rem;
+	overflow: hidden;
+}
+
+.label {
+	color: var(--primary-text-color);
+	text-transform: capitalize;
+	font-family: var(--ff-primary-reg);
+	font-size: var(--fs-base);
+	margin-bottom: 4px;
+	margin-inline-start: 8px;
+}
+
+.input {
+	position: absolute;
+	visibility: hidden;
+}
+.spinner{
+	position: absolute;
+	inset:0;
+	background-color:rgb(0 0 0 / 0.3);
+	z-index: 2;
+	height:100%;
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.videoWrapper{
+	height: 300px;
+}
+
+.video {
+	width: 100% !important;
+	height:100% !important;
+}
+
+.uploadBtn {
+	height: 50px;
+	width: 50px;
+	padding: 1rem;
+	border-radius: 100%;
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	margin-inline-end: 1rem;
+	margin-block-start:1rem;
+}
+
+.playBtn>*,
+.uploadBtn>* {
+	height: 100%;
+	width: 100%;
+}

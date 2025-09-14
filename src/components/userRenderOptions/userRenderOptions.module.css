@@ -1,0 +1,32 @@
+.renderUser {
+  display: flex;
+  gap: 5px;
+}
+.user_image {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.user_image img {
+  height: 100%;
+  width: 100%;
+}
+.user_content h6 {
+  font-size: 14px !important;
+  margin-bottom: 2px;
+  line-height: 1;
+  color: #4a4a4a;
+}
+.user_content p {
+  margin-bottom: 0px;
+  font-size: 13px !important;
+  color: #969696 !important;
+}
+.renderUser.active h6 {
+  color: var(--white-color) !important;
+}
+.renderUser.active p {
+  color: var(--white-color) !important;
+}

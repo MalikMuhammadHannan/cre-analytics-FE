@@ -1,0 +1,102 @@
+.pageMain {
+  background-color: var(--white-color);
+  box-shadow: var(--section-shadow);
+  border-radius: 10px;
+  padding: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  & button {
+    padding: 15px 20px;
+  }
+}
+
+.notificationList {
+  overflow-y: auto;
+  height: calc(100vh - 170px);
+}
+.notificationList::-webkit-scrollbar {
+  width: 5px;
+}
+.notificationCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px 20px 15px;
+  position: relative;
+  border-bottom: 1px solid #5b5122 !important;
+}
+.left {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+/* .userIcons {
+  background: var(--section-background-light);
+  border-radius: 50px;
+  padding: 8px 8px 0px 8px;
+} */
+.userData {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.userData h5 {
+  font-size: 18px;
+  color: var(--white-color);
+  font-family: var(--ff-primary-semiBold);
+  margin-bottom: 0;
+}
+.userData p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: var(--white-color);
+  font-family: var(--ff-primary-med);
+}
+.right {
+  display: flex;
+  gap: 14px;
+}
+.right p {
+  font-family: var(--ff-primary-med);
+  color: var(--white-color);
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.notificationCard:last-child {
+  border-bottom: none;
+}
+.paginationDiv {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 580px) {
+  .notificationCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .right {
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width: 450px) {
+  .notificationCard {
+    padding: 25px 6px 20px 6px;
+  }
+  .userData h5 {
+    font-size: 15px;
+  }
+  .userData p {
+    font-size: 13px;
+  }
+  .right p {
+    font-size: 11px;
+  }
+}
+.skeletonBtn {
+  max-width: 172px;
+  height: 40px;
+}

@@ -1,0 +1,21 @@
+.statusWrapper {
+  display: inline-flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 30px;
+}
+
+.statusWrapper.withoutLabel {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.statusWrapper p {
+  margin-bottom: 0;
+  color: var(--white-color);
+  font-family: var(--ff-primary-reg);
+}

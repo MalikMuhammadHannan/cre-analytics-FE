@@ -1,0 +1,220 @@
+.fileInputDiv label {
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-bold);
+  font-size: var(--fs-base);
+  margin-bottom: 4px;
+  margin-inline-start: 8px;
+}
+
+.main {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px dashed #c7c7c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.imagesWrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: calc(100% - 25px);
+}
+
+.image {
+  overflow: hidden;
+  width: 160px;
+  height: 140px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+  position: relative;
+  background-color: var(--white-color);
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image .closeIconBtn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.fileUploadOptions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 7px;
+}
+
+.fileUploadOptions p {
+  color: #000000b5;
+  font-size: 17px;
+  text-align: center;
+  font-family: var(--ff-primary-med);
+}
+
+.fileUploadOptions p:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+.section button {
+  background-color: var(--white-color);
+  color: var(--main-color);
+  font-size: 15px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  border: 1px solid #06856c;
+}
+
+.upTo {
+  margin-top: 10px;
+}
+
+.suported {
+  background-color: #ffcfab;
+  padding: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.suported p {
+  margin-bottom: 0;
+  margin-inline: auto;
+}
+
+.uploadImage {
+  margin-bottom: 10px;
+}
+
+.uploadImage img {
+  width: 120px;
+  height: 120px;
+}
+
+.pdfView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.pdfView > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.pdfView span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 0px 6px;
+}
+
+.audio__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pdfView p {
+  font-size: 13px !important;
+  margin-bottom: 0;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  padding: 0px 6px;
+}
+
+.isFiles {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.videoPlayer video {
+  object-fit: cover;
+}
+
+.pdfIframe {
+  width: 182px;
+  height: 180px;
+}
+
+.pdfIframe::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.uploadMoreBtn {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  display: block !important;
+  font-family: "poppins-regular";
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 6px 13px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+}
+
+.toottipIconDiv {
+  margin: 3px 0 0 6px;
+}
+
+.uploadingOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

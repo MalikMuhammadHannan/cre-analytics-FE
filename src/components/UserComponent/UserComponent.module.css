@@ -1,0 +1,28 @@
+.userWrapper {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0px;
+  align-items: center;
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 150px 1fr;
+  }
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+	margin-inline-end: 15px;
+  }
+
+  .name {
+    font-family: var(--ff-primary-semiBold);
+    font-size: 24px;
+    color: var(--text-color);
+    margin-bottom: 0;
+  }
+
+  .createdAt {
+    font-family: var(--ff-primary-reg);
+    font-size: 14px;
+    color: var(--text-color);
+  }
+}

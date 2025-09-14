@@ -1,0 +1,36 @@
+.action_left,
+.action_right {
+  position: relative;
+}
+.action_left .actions {
+  position: absolute;
+  top: -5px;
+  left: -40px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.action_right .actions {
+  position: absolute;
+  top: -60px;
+  right: -40px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.actions span {
+  background-color: var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.actions svg {
+  font-size: 12px;
+  color: black;
+  font-weight: 400;
+}

@@ -1,0 +1,45 @@
+.wrapper {
+	display: grid;
+	margin-bottom: 1rem;
+	grid-column: span var(--span);
+}
+
+.wrapper p {
+	margin-bottom: 0;
+}
+
+.wrapper label {
+	text-transform: capitalize;
+	color: var(--secondary-text-color);
+	font-size: var(--fs-100);
+	font-family: var(--ff-primary-med);
+}
+
+.wrapper .withBg {
+	font-family: var(--ff-primary-reg);
+	font-size: var(--fs-base);
+	border-radius: 1rem;
+	padding: 0.8rem 1rem;
+	width: 100%;
+	border: 1px solid var(--border-color);
+	background-color: transparent;
+}
+.wrapper .data__wrapper{
+	padding: 0.8rem 1rem 0.8rem 0;
+	font-family: var(--ff-primary-reg);
+	font-size: var(--fs-base);
+}
+
+.image {
+	height: 200px;
+	width: 100%;
+	margin-top: 8px;
+	border-radius:0.5rem;
+	overflow: hidden;
+}
+
+.image img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}

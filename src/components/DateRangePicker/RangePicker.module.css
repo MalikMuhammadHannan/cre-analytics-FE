@@ -1,0 +1,26 @@
+.datePicker__wrapper{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.datePicker{
+	display: flex;
+	gap: 1rem;	
+	position: absolute;
+	top: calc(100% + 1rem);
+	right: 0;
+	background-color: var(--section-background);
+	border-radius: var(--global-radius);
+	padding: 1rem;
+	z-index: 1;
+	align-items: end;
+}
+.datePicker span{
+	margin-bottom: 1rem;
+}
+.btn{
+	text-decoration: none !important;
+}
+.btn span{
+	text-decoration: underline;
+}

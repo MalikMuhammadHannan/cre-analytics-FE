@@ -1,0 +1,18 @@
+.search {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+.action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & svg {
+    cursor: pointer;
+  }
+}
+.location {
+  color: blue !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}

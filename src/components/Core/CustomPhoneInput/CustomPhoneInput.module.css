@@ -1,0 +1,66 @@
+/* .phoneNumberDiv > div:first-of-type {
+  background-color: var(--dashboard-main-color);
+  border-radius: 5px;
+  border: 1px solid var(--dashboard-main-color);
+  padding: 11px;
+} */
+.label {
+  color: var(--primary-text-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-bold);
+  font-size: var(--fs-base);
+  margin-bottom: 5px;
+  margin-inline-start: 8px;
+  line-height: 1;
+}
+.phoneNumberDiv {
+  position: relative;
+}
+.phoneNumberDiv input {
+  background-color: var(--dashboard-main-color);
+}
+
+.phoneNumberInput > div {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #c7c7c7;
+  padding: 11px;
+  margin-right: 0;
+  border-right: 1px solid #c7c7c7;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.phoneNumberInput input {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #c7c7c7;
+  padding: 0.7rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.phoneNumberInput input::placeholder {
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-base);
+  color: var(--placeholder-color) !important;
+  opacity: 0.8;
+}
+
+.error {
+  border: 1px solid red !important;
+  border-radius: 4px !important;
+  position: relative;
+}
+
+.errorText {
+  color: red;
+  position: absolute;
+  right: 1rem;
+  z-index: 1;
+  bottom: 0;
+}
+.offsetLeftError {
+  right: 56px;
+}

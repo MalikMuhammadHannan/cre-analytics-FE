@@ -1,0 +1,90 @@
+.productFilters {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--white-color);
+  background-size: cover;
+  box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+  position: relative;
+  padding-inline: 15px 10px;
+}
+
+.header {
+  padding-block: 20px;
+  & h2 {
+    font-size: 25px;
+    font-family: var(--ff-primary-bold);
+  }
+}
+.checboxDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  & .leftCheck {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  & .checkbox {
+    height: 17px;
+    width: 17px;
+    border-radius: 4px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.checked {
+      background-color: var(--main-color);
+    }
+  }
+  & .label {
+    font-size: 15px;
+  }
+  & .rightCheck {
+    font-size: 13px;
+  }
+}
+.filterHeader button {
+  background-color: #f5f5f5 !important;
+  padding: 13px 15px 13px 15px;
+  color: var(--main-color) !important;
+  text-transform: capitalize;
+  &:focus {
+    box-shadow: none !important;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 8px 8px 10px 0px;
+  }
+}
+.filtersContainer {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+  padding-left: 4px;
+}
+.filtersContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.checkboxContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.checkboxContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.attributesContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.actionBtns {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}

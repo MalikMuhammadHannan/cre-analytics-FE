@@ -1,0 +1,28 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.field h6 {
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-bold);
+  font-size: var(--fs-base) !important;
+  margin-bottom: 4px;
+}
+.field_content {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  height: 52px;
+}
+.field p {
+  font-size: var(--fs-base);
+  color: var(--text-color);
+  margin-bottom: 0px !important;
+  word-break: break-all;
+}

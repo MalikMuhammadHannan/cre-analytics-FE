@@ -1,0 +1,10 @@
+.dynamic-loader-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-block: 15px;
+  background-color: var(--white-color);
+  padding: 15px;
+  border-radius: var(--section-border-radius);
+  box-shadow: var(--section-shadow);
+}

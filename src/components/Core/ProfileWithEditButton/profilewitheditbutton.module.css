@@ -1,0 +1,73 @@
+.profileEditContainer {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid var(--section-background-light);
+  background-color: var(--section-background-light);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.profileEditImage_box {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.noProfile {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profileEditImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+}
+
+.profileEditPen_box {
+  width: 30px;
+  height: 30px;
+  background: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 100px;
+  opacity: 1;
+  /* border: 2px solid var(--text-color); */
+}
+
+.profileEditPen {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.file_upload_form3rd[type="file"] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .profileEditContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profileEditPen_box {
+    width: 24px;
+    height: 24px;
+    right: -5px;
+    bottom: 5px;
+    top: unset;
+  }
+}
