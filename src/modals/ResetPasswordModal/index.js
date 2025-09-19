@@ -54,9 +54,6 @@ const ResetPasswordModal = ({
             labelStyle={{
               color: "var(--main-color)",
             }}
-            inputStyle={{
-              borderRadius: "var(--global-border-radius)",
-            }}
           />
           <Input
             type={"password"}
@@ -66,9 +63,6 @@ const ResetPasswordModal = ({
             placeholder={"Confirm Password"}
             labelStyle={{
               color: "var(--main-color)",
-            }}
-            inputStyle={{
-              borderRadius: "var(--global-border-radius)",
             }}
           />
 

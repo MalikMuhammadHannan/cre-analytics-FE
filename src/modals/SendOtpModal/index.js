@@ -34,9 +34,6 @@ function SendOtpModal({ show, setShow, handleSendOtp, isLoading }) {
           labelStyle={{
             color: "var(--main-color)",
           }}
-          inputStyle={{
-            borderRadius: "var(--global-border-radius)",
-          }}
         />
         <Button
           label={isLoading ? "Submitting..." : "Submit"}
