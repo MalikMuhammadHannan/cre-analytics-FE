@@ -10,7 +10,7 @@ export const AfterLoginHeader = ({ className, header, drawerBtn, backBtn }) => {
   const navigate = useNavigate();
   const [profileOverlay, setProfileOverlay] = useState(false);
   const { newNotificationsCount } = useSelector((state) => state.commonReducer);
-  const getName = user?.firstName?.slice(0, 1)?.toUpperCase() || "";
+  const getName = user?.name?.slice(0, 1)?.toUpperCase() || "";
   console.log("user", user);
   return (
     <div className={`${[Style.navbarContainer, className].join(" ")}`}>
@@ -47,7 +47,7 @@ export const AfterLoginHeader = ({ className, header, drawerBtn, backBtn }) => {
         <div className={`${[Style.profileImg]} ${Style["profile-wrapper"]}`}>
           <p>{getName}</p>
         </div>
-        <p className={Style["profile-name"]}>{getUserName(user)}</p>
+        <p className={Style["profile-name"]}>{user?.name}</p>
       </div>
     </div>
   );
