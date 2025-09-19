@@ -1,10 +1,6 @@
-import {
-  ImageIcon,
-  SidebarLogo,
-  SidebarLogo2,
-  SidebarLogoSmall,
-} from "@/constant/imagePath";
+import { ImageIcon, SidebarLogo2 } from "@/constant/imagePath";
 import { cloneElement, useEffect, useState } from "react";
+import { LuLayoutDashboard } from "react-icons/lu";
 
 import {
   FiChevronDown,
@@ -13,7 +9,6 @@ import {
   FiSettings,
 } from "react-icons/fi";
 import { IoChevronForward } from "react-icons/io5";
-import { PiHouseLine } from "react-icons/pi";
 import { TbReportSearch } from "react-icons/tb";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -228,7 +223,7 @@ const Links = [
   {
     title: "Dashboard",
     path: "/",
-    icon: <PiHouseLine />,
+    icon: <LuLayoutDashboard />,
   },
   {
     title: "Reports",

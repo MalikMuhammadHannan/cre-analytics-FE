@@ -2,10 +2,11 @@
 
 :root {
   /* --main-color: #0f6ecd; */
-  --main-color: #10254d;
+  --main-color: #173772;
   --secondary-color: #000;
   --primary-color: var(--main-color);
-  --secondary-color: var(--main-color);
+
+  /* --secondary-color: var(--main-color); */
   --main-light-color: #0fb7ff;
   --loader-background-color: rgba(0, 0, 0, 0.1);
   --text-color: #4a4a4a;
@@ -43,7 +44,7 @@
   --light-blue-color: color-mix(in srgb, #0f6ecd, #ffffff30);
   --label-color: #4d4d4d;
   --ligth-gray-bg-color: #e6e6e6;
-  --light-gray-color: #d9d9d9;
+  --light-gray-color: #dfe2e8;
   --disabled-input-color: #fafafa;
   --disabled-label-color: #ababab;
   --btn-gray-color: #e1e1e1;

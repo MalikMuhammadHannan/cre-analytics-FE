@@ -1,6 +1,8 @@
 .authlayoutMain {
-  display: grid;
-  grid-template-columns: auto clamp(800px, 60vw, 1024px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
   margin: auto;
   min-height: 100vh;
   gap: 1rem;
@@ -74,7 +76,7 @@
   display: grid;
   align-content: center;
   margin-inline: auto;
-  width: 100%;
+  width: 500px;
   padding-inline: 1rem;
 }
 .formWrapper {
@@ -85,6 +87,7 @@
   font-size: clamp(1.75rem, 4vw + 1rem, 2rem);
   color: var(--primary-text-color);
   font-family: var(--ff-primary-bold);
+  text-align: center;
 }
 
 .formDescription {
@@ -151,6 +154,9 @@
 .formWrapper {
   position: relative;
 }
+.formHeadingSpan {
+  color: var(--main-color);
+}
 @media screen and (max-width: 992px) {
   .logo {
     display: block;
@@ -185,9 +191,10 @@
 .dontHaveAcc {
   text-align: center;
   font-family: var(--ff-primary);
-  font-weight: 500;
   margin-top: 1rem;
+  color: gray;
   & a {
-    text-decoration: underline !important;
+    color: var(--main-color) !important;
+    font-weight: 600;
   }
 }

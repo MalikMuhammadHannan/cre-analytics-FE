@@ -85,7 +85,7 @@
   isolation: isolate;
 }
 .tableRow::before {
-  content: '';
+  content: "";
 
   position: absolute;
   inset: 0;
@@ -94,7 +94,7 @@
 
 .tableHeader .tableRow::before {
   border-radius: 0.4rem;
-  background: linear-gradient(270deg, #76bbfc 0%, #10254d 100%);
+  background: var(--main-color);
 }
 
 .tableRow:not(:last-child) {

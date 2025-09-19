@@ -125,8 +125,7 @@
 .listItemContainer span {
   font-family: var(--ff-secondary-reg) !important;
   font-size: 15px;
-
-  color: #969696;
+  color: var(--main-color);
 }
 .listItemContainer svg {
   height: 32px;
@@ -134,7 +133,7 @@
   padding: 0.5rem;
   /* padding-right: 0; */
   border-radius: 8px;
-  color: #969696;
+  color: var(--main-color);
 }
 .dropDownIcon {
   fill: var(--white-color) !important;
@@ -153,20 +152,15 @@
 
 /* when item is selected */
 .active {
-  background: linear-gradient(90deg, #fff 0%, #10254d 100%);
+  background: var(--light-gray-color);
   position: relative;
   margin-right: 10px;
 }
 .active span {
-  /* color: var(--white-color) !important; */
-  color: #000 !important;
+  color: var(--main-color);
 }
 .active .icon {
-  /* color: var(--white-color); */
-
-  color: #000 !important;
-
-  /* stroke: var(--white-color); */
+  color: var(--main-color);
 }
 .itemsCollapsed {
   padding-inline: 10px;

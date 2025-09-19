@@ -1,7 +1,5 @@
-import { profile1 } from "@/constant/imagePath";
 import { getUserName } from "@/Helper/HelperFunction";
 import { useState } from "react";
-import { AiFillBell } from "react-icons/ai";
 import { IoMdArrowDropleft } from "react-icons/io";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -12,6 +10,7 @@ export const AfterLoginHeader = ({ className, header, drawerBtn, backBtn }) => {
   const navigate = useNavigate();
   const [profileOverlay, setProfileOverlay] = useState(false);
   const { newNotificationsCount } = useSelector((state) => state.commonReducer);
+  const getName = user?.firstName.charAt(0).toUpperCase() || "";
   return (
     <div className={`${[Style.navbarContainer, className].join(" ")}`}>
       {drawerBtn && drawerBtn}
@@ -25,8 +24,8 @@ export const AfterLoginHeader = ({ className, header, drawerBtn, backBtn }) => {
           <IoMdArrowDropleft />
         </div>
       )}
-      {header && <p className={Style.heading}>{header}</p>}
-      <div
+      {/* {header && <p className={Style.heading}>{header}</p>} */}
+      {/* <div
         className={`${[Style.iconDiv].join(" ")} ${
           Style["notification-header"]
         }`}
@@ -42,20 +41,13 @@ export const AfterLoginHeader = ({ className, header, drawerBtn, backBtn }) => {
           )}
           <AiFillBell />
         </div>
-      </div>
+      </div> */}
       <div className={Style["profile-container"]}>
-              <div
-                className={`${[Style.profileImg]} ${Style["profile-wrapper"]}`}
-              >
-                {/* <img src={imageUrl(user?.photo)} alt="..." layout="fill" /> */}
-                <img src={profile1} alt="..." layout="fill" />
-
-              </div>
-              <p className={Style["profile-name"]}>
-                {getUserName(user)}
-               
-              </p>
-            </div>
-         </div>
+        <div className={`${[Style.profileImg]} ${Style["profile-wrapper"]}`}>
+          <p>{getName}</p>
+        </div>
+        <p className={Style["profile-name"]}>{getUserName(user)}</p>
+      </div>
+    </div>
   );
 };

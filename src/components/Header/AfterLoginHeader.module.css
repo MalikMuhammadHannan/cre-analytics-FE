@@ -9,12 +9,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: linear-gradient(270deg, #000 0%, #10254d 100%);
+  border-bottom: 2px solid var(--light-gray-color);
   background-blend-mode: color-dodge, normal;
   background-size: cover;
   max-width: 100%;
   user-select: none;
-  border-radius: 0.4rem;
   padding: 10px 20px;
   margin-inline: 18px;
   position: relative;
@@ -66,12 +65,22 @@
 }
 
 .profileImg {
-  background-color: #d6d6d6;
-  border: 2px solid var(--secondary-color);
+  background-color: var(--main-color);
   border-radius: 50%;
   height: 50px;
   width: 50px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  & p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 200;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
 .profileImg img {
   width: 100%;
@@ -82,7 +91,7 @@
 }
 .profile-name {
   font-family: var(--ff-primary-semiBold);
-  color: var(--white-color);
+  color: var(--main-color);
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;

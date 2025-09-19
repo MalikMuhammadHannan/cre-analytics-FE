@@ -66,96 +66,67 @@ const SignUp = () => {
   return (
     <>
       <main className={classes.authlayoutMain}>
-        <div className={classes.colTwo}>
-          <div className={classes.logo__big}>
-            <img src={SidebarLogo2} style={{ objectFit: "contain" }} />
-          </div>
-        </div>
-        <div className={classes.colOne}>
-          <div className={classes.header}>
-            <div className={classes.logo}>
-              <img
-                src={SidebarLogo2}
-                quality={100}
-                style={{ objectFit: "contain" }}
-                height={100}
-                width={200}
+        <div className={classes.formWrapper}>
+          <div className={classes.wrapper}>
+            <h1 className={classes.formHeading}>
+              Sign Up to{" "}
+              <span className={classes.formHeadingSpan}>CRE Analytics </span>
+            </h1>
+
+            <form onSubmit={handleLogin} className={classes.login_form}>
+              <Input
+                placeholder="Name"
+                value={name}
+                setter={setName}
+                label={"Name"}
+                labelStyle={{
+                  color: "var(--main-color)",
+                }}
               />
-            </div>
-          </div>
-          <div className={classes.formWrapper}>
-            <div className={classes.wrapper}>
-              <h1 className={classes.formHeading}>Sign Up</h1>
+              <Input
+                placeholder="Email"
+                type="email"
+                value={email}
+                setter={setEmail}
+                label={"Email"}
+                labelStyle={{
+                  color: "var(--main-color)",
+                }}
+              />
+              <Input
+                placeholder="Password"
+                value={password}
+                setter={setPassword}
+                type="password"
+                label={"Password"}
+                labelStyle={{
+                  color: "var(--main-color)",
+                }}
+              />
+              <Input
+                placeholder="Confirm Password"
+                value={confirmPassword}
+                setter={setConfirmPassword}
+                type="password"
+                label={"Confirm Password"}
+                labelStyle={{
+                  color: "var(--main-color)",
+                }}
+              />
 
-              <form onSubmit={handleLogin} className={classes.login_form}>
-                <Input
-                  placeholder="Name"
-                  value={name}
-                  setter={setName}
-                  label={"Name"}
-                  labelStyle={{
-                    color: "var(--main-color)",
-                  }}
-                  inputStyle={{
-                    borderRadius: "var(--global-border-radius)",
-                  }}
-                />
-                <Input
-                  placeholder="Email"
-                  type="email"
-                  value={email}
-                  setter={setEmail}
-                  label={"Email"}
-                  labelStyle={{
-                    color: "var(--main-color)",
-                  }}
-                  inputStyle={{
-                    borderRadius: "var(--global-border-radius)",
-                  }}
-                />
-                <Input
-                  placeholder="Password"
-                  value={password}
-                  setter={setPassword}
-                  type="password"
-                  label={"Password"}
-                  labelStyle={{
-                    color: "var(--main-color)",
-                  }}
-                  inputStyle={{
-                    borderRadius: "var(--global-border-radius)",
-                  }}
-                />
-                <Input
-                  placeholder="Confirm Password"
-                  value={confirmPassword}
-                  setter={setConfirmPassword}
-                  type="password"
-                  label={"Confirm Password"}
-                  labelStyle={{
-                    color: "var(--main-color)",
-                  }}
-                  inputStyle={{
-                    borderRadius: "var(--global-border-radius)",
-                  }}
-                />
-
-                <Button
-                  label={
-                    loading === "loginLoader" ? "SUBMITTING..." : "SIGN UP"
-                  }
-                  disabled={loading === "loginLoader"}
-                  customStyle={{
-                    borderRadius: "var(--btn-border-radius)",
-                    padding: "12px 16px",
-                  }}
-                  type="submit"
-                />
-                <p className={classes.dontHaveAcc}>
-                  Already have an account? <Link to="/login">Sign In</Link>
-                </p>
-              </form>
-            </div>
+              <Button
+                label={loading === "loginLoader" ? "SUBMITTING..." : "SIGN UP"}
+                disabled={loading === "loginLoader"}
+                customStyle={{
+                  borderRadius: "var(--btn-border-radius)",
+                  padding: "12px 16px",
+                }}
+                type="submit"
+              />
+              <p className={classes.dontHaveAcc}>
+                Already have an account? <Link to="/login">Log In</Link>
+              </p>
+            </form>
           </div>
         </div>
       </main>
