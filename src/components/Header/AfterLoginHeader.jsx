@@ -10,7 +10,7 @@ export const AfterLoginHeader = ({ className, header, drawerBtn, backBtn }) => {
   const navigate = useNavigate();
   const [profileOverlay, setProfileOverlay] = useState(false);
   const { newNotificationsCount } = useSelector((state) => state.commonReducer);
-  const getName = user?.firstName.charAt(0).toUpperCase() || "";
+  const getName = user?.firstName?.slice(0, 1)?.toUpperCase() || "";
   return (
     <div className={`${[Style.navbarContainer, className].join(" ")}`}>
       {drawerBtn && drawerBtn}
